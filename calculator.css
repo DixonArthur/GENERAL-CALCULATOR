@@ -1,0 +1,58 @@
+body {
+  font-family: verdana, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu;
+  background-color: #1a0c2f;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+#calculator {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 25px 15px;
+  background-color: hsl(264, 10%, 81%);
+}
+#viewScreen {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: hsl(0, 17%, 13%);
+  border: none;
+  text-align: right;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  color: white;
+}
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+div button {
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  color: white;
+}
+.numbers {
+  background-color: hsl(196, 29%, 30%);
+}
+.numbers:hover {
+  background-color: hsl(196, 29%, 55%);
+}
+.numbers:active {
+  background-color: hsl(196, 29%, 20%);
+}
+.controls {
+  background-color: hsl(0, 92%, 52%);
+}
+.controls:hover {
+  background-color: hsl(0, 92%, 65%);
+}
+.controls:active {
+  background-color: hsl(0, 92%, 20%);
+}

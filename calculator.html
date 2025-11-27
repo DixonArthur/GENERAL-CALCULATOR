@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <input id="viewScreen" type="text" readonly />
+      <div id="buttons">
+        <button onclick="addDisplay('9')" class="numbers">9</button>
+        <button onclick="addDisplay('8')" class="numbers">8</button>
+        <button onclick="addDisplay('7')" class="numbers">7</button>
+        <button onclick="addDisplay('6')" class="numbers">6</button>
+        <button onclick="addDisplay('5')" class="numbers">5</button>
+        <button onclick="addDisplay('4')" class="numbers">4</button>
+        <button onclick="addDisplay('3')" class="numbers">3</button>
+        <button onclick="addDisplay('2')" class="numbers">2</button>
+        <button onclick="addDisplay('1')" class="numbers">1</button>
+        <button onclick="addDisplay('0')" class="numbers">0</button>
+        <button onclick="calculate()" class="controls">=</button>
+        <button onclick="addDisplay('*')" class="controls">*</button>
+        <button onclick="addDisplay('+')" class="controls">+</button>
+        <button onclick="addDisplay('-')" class="controls">-</button>
+        <button onclick="addDisplay('/')" class="controls">/</button>
+        <button onclick="blankScreen()" class="controls">clear</button>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
